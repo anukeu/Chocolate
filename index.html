@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Chocolate Day My Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            display: none;
+            padding: 40px;
+            background: #2e2e4f;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .active {
+            display: block;
+        }
+        .btn {
+            background: #d63447;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .letter {
+            font-family: 'Courier New', monospace;
+            background: #3a3a6e;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        #section1 h1, #section1 p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1 -->
+        <div class="section active" id="section1">
+            <h1>Happy Chocolate Day, My Love! 🍫❤️</h1>
+            <p>You're the sweetest thing in my life, even sweeter than chocolates! 😘</p>
+            <button class="btn" onclick="nextSection(2)">Next</button>
+        </div>
+        
+        <!-- Section 2 -->
+        <div class="section" id="section2">
+            <div class="letter">
+                <p>"मेरी मोहब्बत की मीठी मिठास,</p>
+                <p>जैसे चॉकलेट का प्यारा एहसास...</p>
+                <p>तुम हो मेरे दिल की सबसे प्यारी बात,</p>
+                <p>तुमसे जुड़ी है मेरी हर एक बात...</p>
+                <p>चॉकलेट डे पर बस एक ही शब्द कहना है,</p>
+                <p>मैं तुम्हारा हूँ, और हमेशा रहना है! ❤️"</p>
+            </div>
+            <img src="anau.JPG" alt="Her Image">
+            <button class="btn" onclick="nextSection(3)">Next</button>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="section3">
+            <h2>This Chocolate Day ... 🍫</h2>
+            <p>Aapan pahilyanda ekatra ha divas celebrate karat ahot...</p>
+            <p>Sorry yaal anau, mi tujhya barobar atta nahi aahe...</p>
+            <p>Pan na tujhya sathi ek chhotusa surpise aahe...</p>
+            <p>Tula attaach khali jaycha aahe... jevdha laukar jata yeil tevdha lavkar!</p>
+            <p>Karan ek chhoti shi bhet tithe tujhya sathi thambun aahe! ❤️</p>
+            <p>Zar kahi samajla nahi tar mala laglach call kar or message, kahihi! 📞</p>
+            <p>So ata mala msg karun prashna vicharnya peksha lavkarat lavkar khali ja FAST!</p>
+        </div>
+    </div>
+
+    <script>
+        function nextSection(section) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById('section' + section).classList.add('active');
+        }
+    </script>
+</body>
+</html>
